@@ -73,7 +73,7 @@ This separation allows the backend logic to be reused or tested independently of
 Below is an example of the bot in action:
 
 <img src="pics/pic_1.jpeg" width="350" height="709"/>
-[Watch demo video](pics/demo.mp4)
+<img src="pics/demo.gif" width="350" height="709"/>
 
 The bot responds with a formatted list of counters, including win rate information derived from OpenDota match data.
 
