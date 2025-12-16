@@ -36,7 +36,7 @@ Key endpoints used:
 
 - `GET /api/heroes/{hero_id}/matchups`
   - Provides win/loss statistics for hero vs hero matchups
-  - Used to determine counters and synergies
+  - Used to determine counters
 
 Important notes about the API data:
 
@@ -75,7 +75,7 @@ Below is an example of the bot in action:
 <img src="pics/pic_1.jpeg" width="350" height="709"/>
 [Watch demo video](pics/demo.mp4)
 
-The bot responds with a formatted list of counters and synergies, including win rate information derived from OpenDota match data.
+The bot responds with a formatted list of counters, including win rate information derived from OpenDota match data.
 
 ---
 
