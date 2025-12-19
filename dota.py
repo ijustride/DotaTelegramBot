@@ -34,7 +34,7 @@ def load_heroes():
 def smoothed_winrate(wins, games, prior=0.5, weight=100):
     return (wins + prior * weight) / (games + weight)
 
-MIN_GAMES = 50
+MIN_GAMES = 25
 
 def get_clean_matchups(hero_id, limit = 5):
     matchups = requests.get(
@@ -56,9 +56,5 @@ def get_clean_matchups(hero_id, limit = 5):
             "winrate": wr,
             "games": m["games_played"]
         })
-    clean = sorted(
-        clean,
-        key=lambda x: x["winrate"]
-    )
-    return clean[:limit]
+    return clean
 

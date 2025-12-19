@@ -33,7 +33,7 @@ async def hero(update, context):
 
     text += "*Counters*\n"
     for c in counters:
-        text += f"• {dota.heroes_map[c['hero_id']]} ({100 - c['winrate']*100:.1f}%)\n"
+        text += f"• {dota.heroes_map[c['hero_id']]} ({100 - c['winrate'] * 100:.1f}%)\n"
 
 
     await update.message.reply_text(text, parse_mode="Markdown")
